@@ -9,7 +9,8 @@ import java.util.List;
 
 @Data
 @Builder
-@Document(collation = "person")
+// refer to collection type in mongodb
+@Document(collection = "person")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Person {
     @Id
